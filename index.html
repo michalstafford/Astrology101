@@ -1,0 +1,171 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astrology</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+      h1 {
+        color: green;
+        font-size: 50px;
+        font-family: cursive;
+        border-width: 1px;
+        text-align: center;
+        border: 3px solid aquamarine;
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      h2 {
+        color: lightgreen;
+        padding: 20px;
+        font-size: 24px;
+        margin: auto;
+        text-align: center;
+        height: 50%;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 150%;
+        border-radius: 10px;
+      }
+
+      button {
+        font-size: 20px;
+        font-weight: bolder;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 30px;
+        color: green;
+        background-color: lightseagreen;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 3.5px 3.5px 2.5px rgb(128, 128, 128);
+      }
+      button:hover {
+        opacity: 0.5;
+      }
+
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 5% 5%;
+      }
+
+      .astrology-info {
+        color: aliceblue;
+        font-size: 20px;
+        line-height: 30px;
+        margin: inline;
+        display: block;
+      }
+
+      .free-chart {
+        color: bisque;
+        display: block;
+        margin: inline;
+        margin-top: 25px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .free-chart:hover {
+        text-decoration: bisque underline;
+      }
+
+      .footer {
+        color: aliceblue;
+      }
+
+      .author-link {
+        color: bisque;
+        display: inline;
+      }
+      .author-link:hover {
+        text-decoration: bisque underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Astrology</h1>
+      <h2><em>Do you know your zodiac sign?</em></h2>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/864/original/pexels-ann-bugaichuk-17675583.jpg?1707619411"
+        alt=" Astrology"
+        width="450"
+      />
+      <p class="astrology-info">
+        Astrology holds importance for so many individuals as it provides a
+        framework for understanding oneself and navigating life's complexities.
+        It offers insights into personality traits, strengths, and challenges
+        based on the positions of celestial bodies at the time of birth. By
+        exploring astrological charts, people often gain a deeper sense of
+        self-awareness and insight into their relationships, career paths, and
+        personal growth journeys. Additionally, astrology can serve as a source
+        of comfort during uncertain times, offering guidance and a sense of
+        connection to the cosmos. While some may view it skeptically, for
+        others, astrology offers a valuable tool for introspection,
+        self-discovery, and finding meaning in the universe's rhythms and
+        patterns.
+        <br />
+        <a
+          href="https://astro.cafeastrology.com/natal.php"
+          target="_blank"
+          class="free-chart"
+        >
+          Free personal chart at AstroCafe</a
+        >
+      </p>
+      <button class="button">Get a reading</button>
+
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.etsy.com/shop/GhettoSpirit?ref=shop-header-name&listing_id=1449562621&from_page=listing"
+          target="_blank"
+          class="author-link"
+        >
+          Mic</a
+        >.
+      </p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function buyYogurt() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+
+          if ((name === "" && email === "") || email === "") {
+            alert(
+              "Just let me know your name and email. Then we'll be in touch."
+            );
+          } else {
+            alert(
+              "Hi, " +
+                name +
+                ". Get ready for new insight. Please check your email!"
+            );
+          }
+        }
+        let button = document.querySelector(".button");
+        button.addEventListener("click", buyYogurt);
+      });
+    </script>
+  </body>
+</html>
+<!-- @format -->
